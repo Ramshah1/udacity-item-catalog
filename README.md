@@ -17,12 +17,17 @@ The Flask applications uses HTML templates in the `templates` folder to build th
 * OAuth for Google
 * Flask Framework
 
-##Project Setup
+## Project Setup
 1. Install Vagrant and Virtual Box.
 2. Download or clone the [Full-Stack NonoDegree Virtual Machine](https://github.com/udacity/fullstack-nanodegree-vm)
 3. IN the `catalog` folder, replace the contents of this repository.
 
-###Launch Project
+To run the project on local machine, install the dependencies using
+```
+pip install -r requirements.txt
+```
+
+### Launch Project
 1. Lauch the Vagrant VM using
 ```vagrant up```
 2. To setup the database, run the following command within the VM
@@ -31,7 +36,7 @@ The Flask applications uses HTML templates in the `templates` folder to build th
 ```python /vagrant/catalog/catalog.py```
 4. Access and test the application by visiting [http://localhost:5000/](http://localhost:5000/)
 
-###Json API EndPoints
+### Json API EndPoints
 This app supports following public JSON API endpoints:
 
 * To get items from one category:

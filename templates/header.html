@@ -7,18 +7,18 @@
     </div>
 
     {% if login %}
-    <div class="col-md-6 text-right">
-        <p><a href="{{ url_for('logout_the_user') }}">
-            <span class="glyphicon" aria-hidden="true"></span>Logout
-        </a></p>
+        <div class="col-md-6 text-right">
+            <p><a href="{{ url_for('logout_the_user') }}">
+                <span class="glyphicon" aria-hidden="true"></span>Logout
+            </a></p>
 
-    </div>
-    {% else %}
-    <div class="row top-menu">
-        <div class="col-md-10"></div>
-        <div class="col-md-2 text-right">
-            <a href="{{ url_for('show_login') }}">Click Here to Log in </a>
         </div>
-    </div>
+    {% else %}
+        <div class="row top-menu">
+            <div class="col-md-10"></div>
+            <div class="col-md-2 text-right">
+                <a href="{{ url_for('show_login') }}">Click Here to Log in </a>
+            </div>
+        </div>
     {% endif %}
 </div>
