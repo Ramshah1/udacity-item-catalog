@@ -16,7 +16,7 @@ def login_required(app_function):
     @wraps(app_function)
     def wrapper(*args, **kwargs):
         if 'username' in login_session:
-            app_function(*args, **kwargs)
+            return app_function(*args, **kwargs)
         else:
             flash('A user must be logged to add a new item.')
             return redirect('/login')
